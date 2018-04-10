@@ -1,0 +1,289 @@
+.customerList{
+	color:white;
+	font-size:medium;
+	font-style:italic;
+}
+
+.errorMessage {
+	color: red;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.infoMessage {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+div.hftm {
+	float: right;
+	border: 1px dotted black;
+	margin: 0px 0px 15px 20px;
+}
+
+/* body { */
+
+/* /* 	background-image: url(../resources/images/wr.jpg); */
+* /
+	/* /* 	background-repeat: no-repeat; */ * /
+	/* } */ 
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+th {
+	text-align: left;
+	padding-right: 5pt;
+	color: #e20018;
+}
+
+td {
+	vertical-align: top;
+	padding-right: 5pt;
+}
+
+.title {
+	font-size: xx-large;
+	font-weight: bold;
+	color: #e20018;
+}
+
+.heading {
+	text-align: right;
+	font-size: large;
+	font-weight: bold;
+	color: #e20018;
+}
+
+.important {
+	font-weight: bold;
+}
+
+.info {
+	color: black;
+}
+
+.error {
+	background-color: yellow;
+}
+
+.newWine {
+	font-size: 30px;
+	font-weight: bold;
+	color: #e20018;
+}
+
+.header {
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	font-weight: bold;
+	color: green;
+	line-height: 50pt;
+}
+
+.errorMessage {
+	color: red;
+}
+
+.infoMessage {
+	color: green;
+}
+
+.images {
+	position: fixed;
+	top: 80px;
+	left: 1000px;
+	}
+
+.hello {
+	font-size: 30pt;
+	font-weight: bold;
+	color: green;
+}
+
+ul {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	font-size:13px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+.contents {
+	position: relative;
+	left: 50px; 
+	top: 100px;
+	
+}
+
+.foot {
+	padding: 0.5em;
+	color: white;
+	overflow: hidden;
+	background-color: #333;
+	clear: left;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+/* 
+.languageIcon{
+	width: 25px;
+	height: 15px;
+		position: fixed;
+	right:500px;
+}
+ */
+
+.menu {
+	width: 200px;
+	height: 300px;
+	position: relative;
+	float: left;
+/*	background-color: blue; */
+}
+
+/* Speech input formatting starts here*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  background: #333;
+}
+
+#page-wrapper {
+  width: 640px;
+  background: #FFFFFF;
+  padding: 1em;
+  margin: 1em auto;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.25em;
+}
+
+input {
+  display: block;
+  font-size: 1.2em;
+  padding: 0.25em;
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  border: 1px solid #BABABA;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0 0.25rem;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Speech input formatting ends here*/
+
+
+/** PanelGrid background color. */
+.paint{
+	background-color: lightblue;
+	
+}
+
+/** p:dataTable css */
+
+.pdatatable{
+	width: 1000px;
+	position: relative;
+    left: 30px;
+	 top: 120px;
+}
+
+.signature{
+	color:white;
+}
+
+
+.display{
+font-family: Arial, sans-serif;
+	font-size: 13pt;
+	color: white;
+}
+
+.logedinPerson{
+	font-size:14px;
+	color:orange;
+	position:relative;
+	right:-750px;
+	
+}
+
+/* 23.04.17 */
+#upload-button{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: url('../image/upload.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#upload-button input[type='file']{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+#upload-button:active{
+    width: 102px;
+    height: 102px;
+}
+
+
