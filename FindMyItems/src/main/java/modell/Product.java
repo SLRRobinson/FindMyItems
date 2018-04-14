@@ -1,12 +1,16 @@
 package modell;
 
 import java.io.Serializable;
+
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 
 @Entity
 public class Product implements Serializable {
@@ -21,6 +25,10 @@ public class Product implements Serializable {
 	private String productName;
 	private String productDescription;
 	private Date purchseDate;
+	
+	@ManyToOne
+	@JoinColumn(name="owner_proId")
+	private Owner productsOwner;
 
 	public Product() {
 
@@ -65,5 +73,8 @@ public class Product implements Serializable {
 	public void setPurchseDate(Date purchseDate) {
 		this.purchseDate = purchseDate;
 	}
+	
+	
 
+	
 }
