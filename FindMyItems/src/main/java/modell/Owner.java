@@ -17,6 +17,7 @@ public class Owner  implements Serializable {
 	private Long ownerId;
 	private String name;
 	private String vorname;
+	private Product product;
 	@OneToMany(mappedBy="productsOwner")
 	private ArrayList<Product> products;
 	
@@ -49,6 +50,23 @@ public class Owner  implements Serializable {
 	}
 	public void setVorname(String vorname) {
 		this.vorname = vorname;
+	}
+	public Product getProduct() {
+		return product;
+	}
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+	public ArrayList<Product> getProducts() {
+		return products;
+	}
+	public void setProducts(ArrayList<Product> products) {
+		this.products = products;
+	}
+	@Override
+	public String toString() {
+		return "Owner [ownerId=" + ownerId + ", name=" + name + ", vorname=" + vorname + ", product=" + product
+				+ ", products=" + product.getProductDescription() + "]";
 	}
 	
 	
