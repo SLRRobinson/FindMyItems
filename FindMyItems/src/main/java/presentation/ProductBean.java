@@ -8,15 +8,14 @@ import javax.inject.Named;
 
 import modell.Owner;
 import modell.Product;
-
-@Named("productBean")
 @SessionScoped
+@Named("productBean")
 public class ProductBean implements Serializable {
 
 	/****/
-	 
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private Product product;
 
 	public ProductBean() {

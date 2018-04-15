@@ -10,8 +10,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import org.jboss.weld.context.http.Http;
+import org.jboss.weld.context.bound.Bound;
+import javax.enterprise.inject.New;
+import org.jboss.weld.context.ejb.Ejb;
+import org.jboss.weld.context.unbound.Unbound;
+import javax.inject.Named;
 
 
+@Http
+@Bound
+@New
+@Ejb
+@Unbound
+@Named
 @Entity
 public class Product implements Serializable {
 

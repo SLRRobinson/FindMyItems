@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>Owners</h:head>
+<h:body>
+	<h:form name="ownersForm">
+		<h:panelGrid columns="2">
+
+			<h:outputText for="name" value="Name" />
+			<h:inputText id="name" value="#{ownerBean.ownerModell.name}" />
+
+			<h:outputText for="vorname" value="Vorname" />
+			<h:inputText id="vorname" value="#{ownerBean.ownerModell.vorname}" />
+
+			<h:outputText for="product" value="Products" />
+			<h:inputText id="product"
+				value="#{ownerBean.ownersProduct.productDescription}" />
+
+			<h:commandButton action="Save"
+				value="#{ownerBean.saveOwnersProduct()}" />
+		</h:panelGrid>
+
+
+	</h:form>
+
+</h:body>
+</html>

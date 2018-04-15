@@ -3,25 +3,29 @@ package presentation;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import business.FinderManager;
 import modell.Owner;
 import modell.Product;
-@Named("ownerBean")
 @SessionScoped
+@Named("ownerBean")
 public class OwnerBean implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	/****/
 
+	private static final long serialVersionUID = 1L;
+	FinderManager fManager = FinderManager.getInstance();
 	private Owner ownerModell;
-	@Inject
-	private ProductBean productBean;
+	private Product ownersProduct;
 	private ArrayList<Product> productList;
+
+	Owner owner = new Owner();
+	Product product = new Product();
+	@Inject
+	ProductBean productBean;
 
 	public Owner getOwnerModell() {
 		return ownerModell;
@@ -31,19 +35,23 @@ public class OwnerBean implements Serializable {
 		this.ownerModell = ownerModell;
 	}
 
-	public ProductBean getProductBean() {
-		return productBean;
-	}
-
-	public void setProductBean(ProductBean productBean) {
-		this.productBean = productBean;
-	}
-
 	public ArrayList<Product> getProductList() {
 		return productList;
 	}
 
 	public void setProductList(ArrayList<Product> productList) {
 		this.productList = productList;
+	}
+
+	public Product getOwnersProduct() {
+		return ownersProduct;
+	}
+
+	public void setOwnersProduct(Product ownersProduct) {
+		this.ownersProduct = product;
+	}
+
+	public void saveOwnersProduct() {
+		FinderManager.getInstance().saveOwnersProduct(ownerModell);
 	}
 }
